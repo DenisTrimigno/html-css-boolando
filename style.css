@@ -1,6 +1,7 @@
 * { padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -38,14 +39,32 @@
 
 }
 
+h2 {
+    font-weight: 400;
+}
+
+p {
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+strong {
+    margin-bottom: 5px;
+}
+
 
 
 /* AREA MENU */
 
 header {
-    background-color: orange;
+    background-color: orangered;
     padding: 10px 0px;
     box-shadow: 0 0 5px  black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
 }
 
 .menu-header , .icons-header {
@@ -80,13 +99,13 @@ header {
 
 
 .menu-header, .logo-header, .icons-header {
-    height: 100px;
+    height: 70px;
     width: 100%;
 }
 
 .logo-header img {
-    margin-top: 15px;
-    width: 300px;
+    margin-top: 10px;
+    width: 200px;
 
 }
 
@@ -116,16 +135,88 @@ footer {
 /* MAIN */
 
 main {
-    margin: 30px 0px;
+    margin: 150px 0px 30px 0px;
 }
 
 
 .card {
-    height: 500px;
-    background-color: blue;
     width: 100%;
+}
+
+.img-content img {
+    width: 100%;
+
+}
+
+.first-img {
+    display: block;
+}
+
+.second-img {
+    display: none;
+
+}
+
+.img-content{
+    position: relative;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 5px;
+    background-color: white;
+}
+
+
+.labels {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+
+.red-label, .green-label {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.red-label{
+    background-color: red;
+}
+
+.green-label {
+    background-color: green;
+}
+
+
+.offer {
+    color: red;
+    font-weight: 600;
+    padding:0px 5px 0px 0px ;
+}
+
+.price-deleted {
+    text-decoration:line-through ;
+    padding: 0 5px;
+    font-size: 14px;
+
+}
+
+.img-content:hover .first-img {
+    display: none;
 }
 
 
 
+.img-content:hover .second-img {
+    display: block;
+}
 
+.heart-icon:hover {
+    color: red;
+
+}
